@@ -59,7 +59,7 @@ public class PostService {
                 .orElseThrow(() -> DataNotFoundException.withId(id));
     }
 
-    public List<Post> getByTitle(String title){
+    public List<Post> getByTitle(String title) {
         return postRepository.findAllByTitleContainingIgnoreCase(title);
     }
 }

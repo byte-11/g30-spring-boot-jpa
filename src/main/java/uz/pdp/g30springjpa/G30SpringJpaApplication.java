@@ -5,6 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import uz.pdp.g30springjpa.domain.Post;
 import uz.pdp.g30springjpa.repo.PostRepository;
 
@@ -12,6 +13,7 @@ import java.net.URL;
 import java.util.List;
 
 @SpringBootApplication
+@EnableJpaAuditing
 public class G30SpringJpaApplication {
 
     public static void main(String[] args) {
