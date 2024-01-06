@@ -1,6 +1,6 @@
 package uz.pdp.g30springjpa.dto.projection;
 
-public interface UserDto {
+public interface UserDtoInterface {
     Long getId();
     String getUsername();
     String getEmail();
